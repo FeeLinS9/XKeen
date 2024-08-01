@@ -2,16 +2,16 @@
 ## Подготовка USB накопителя
 ### Использование файловой системы EXT4 на USB-накопителях.
 Для работы накопителей с файловой системой EXT4 в роутере Keenetic предварительно нужно установить компонент "Файловая система Ext". Сделать это можно на странице "Общие настройки" в разделе "Обновления и компоненты", нажав на "Изменить набор компонентов".
-![image](https://github.com/FeeLinS9/XKeen/files/blob/master/8.png)\
+![image](https://github.com/FeeLinS9/XKeen/blob/master/files/8.png)\
 
 ### Форматируем накопитель в Ext4.
 #### Форматирование в Linux:
 Универсальным способом форматирования USB-накопителя является использование утилиты для управления дисками GParted. Обычно она уже установлена в ОС, но при необходимости её можно установить из официальных репозиториев (выполните sudo apt install gparted или sudo yum install gparted в зависимости от дистрибутива).
 
 Запустите GParted. В правом верхнем углу выберите нужное устройство (идентифицировать свой накопитель можно по метке, размеру или файловой системе). Размонтируйте накопитель, чтобы появилась возможность форматирования.\
-![image](https://github.com/FeeLinS9/XKeen/files/blob/master/1.png)\
-![image](https://github.com/FeeLinS9/XKeen/files/blob/master/2.png)\
-![image](https://github.com/FeeLinS9/XKeen/files/blob/master/3.png)\
+![image](https://github.com/FeeLinS9/XKeen/blob/master/files/1.png)\
+![image](https://github.com/FeeLinS9/XKeen/blob/master/files/2.png)\
+![image](https://github.com/FeeLinS9/XKeen/blob/master/files/3.png)\
 \
 Также форматирование можно выполнить специальными командами через Терминал.
 
@@ -31,9 +31,9 @@ sudo mkfs.ext4 -n 'USB' -I /dev/sdc1
 #### Форматирование в Windows:
  Можно воспользоваться бесплатной версией программы Paragon Partition Manager Free или AOMEI Partition Assistant Standard Edition.\
 Приведем пример форматирования накопителя в MiniTool Partition Wizard Free Edition:\
-![image](https://github.com/FeeLinS9/XKeen/files/blob/master/4.jpg)\
-![image](https://github.com/FeeLinS9/XKeen/files/blob/master/5.jpg)\
-![image](https://github.com/FeeLinS9/XKeen/files/blob/master/6.jpg)\
-![image](https://github.com/FeeLinS9/XKeen/files/blob/master/7.jpg)\
+![image](https://github.com/FeeLinS9/XKeen/blob/master/files/4.jpg)\
+![image](https://github.com/FeeLinS9/XKeen/blob/master/files/5.jpg)\
+![image](https://github.com/FeeLinS9/XKeen/blob/master/files/6.jpg)\
+![image](https://github.com/FeeLinS9/XKeen/blob/master/files/7.jpg)\
 Подключите подготовленный диск с файловой системой EXT4 к маршрутизатору в USB-порт. Диск должен появиться в меню 'Приложения' на странице 'USB-устройства'.\
-![image](https://github.com/FeeLinS9/XKeen/files/blob/master/9.png)\
+![image](https://github.com/FeeLinS9/XKeen/blob/master/files/9.png)\
